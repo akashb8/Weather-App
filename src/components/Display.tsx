@@ -1,4 +1,4 @@
-import { useState, FormEvent } from 'react';
+import { useState, type FormEvent } from 'react';
 import axios from 'axios';
 import type { WeatherData } from '../types/types';
 import { Search } from './Search';
