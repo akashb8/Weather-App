@@ -6,7 +6,7 @@ interface SearchProps {
   fetchWeather: (e: FormEvent<HTMLFormElement>) => void;
 }
 
-export function Search({ city, setCity, fetchWeather }: SearchProps) {
+function Search({ city, setCity, fetchWeather }: SearchProps) {
   return (
     <form onSubmit={fetchWeather} className="flex gap-2.5 mb-8">
       <input
@@ -25,3 +25,5 @@ export function Search({ city, setCity, fetchWeather }: SearchProps) {
     </form>
   );
 }
+
+export default Search;

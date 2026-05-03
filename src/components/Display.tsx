@@ -1,9 +1,9 @@
 import { useState, type FormEvent } from 'react';
 import axios from 'axios';
 import type { WeatherData } from '../types/types';
-import { Search } from './Search';
+import Search from './Search';
 
-export function Display() {
+function Display() {
   const [city, setCity] = useState<string>('');
   const [weatherData, setWeatherData] = useState<WeatherData | null>(null);
   const [loading, setLoading] = useState<boolean>(false);
@@ -110,3 +110,5 @@ export function Display() {
     </div>
   );
 }
+
+export default Display;

@@ -1,4 +1,4 @@
-import { Display } from './components/Display';
+import Display from "./components/Display";
 
 function App() {
   return (
